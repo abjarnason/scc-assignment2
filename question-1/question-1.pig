@@ -8,4 +8,4 @@ D = GROUP C BY $0;
 E = FOREACH D GENERATE group, COUNT($1);
 -- sort in increasing order of degree
 F = ORDER E BY group ASC;
-STORE F into 'question-1-out';
+STORE F into 'question-1-output';
